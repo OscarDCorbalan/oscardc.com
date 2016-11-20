@@ -1,6 +1,18 @@
 - var headTitle = 'Gulp Less Pug Skeleton'
 - var headDescription = 'Skeleton to build static websties using Pug and Less, plus a live-reload webserver for faster development'
 
++homeArticle(link, title, subTitle, ext)
+	article
+		a(href="/pages/{link}")
+		header
+			.details
+				h2 {title}
+				p {subTitle}
+		span.bw-wrap
+			img.bw(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/{$link}/{$link}-bw.jpg", alt="{$title}", width=300, height=300)
+		span.clr-wrap
+			img.clr(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/{$link}/{$link}.jpg", alt="{$title}", width=300, height=300)
+
 include ./partials/header.pug
 	body
 		header
