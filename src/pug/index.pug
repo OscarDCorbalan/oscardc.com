@@ -1,27 +1,21 @@
 - var headTitle = 'Gulp Less Pug Skeleton'
 - var headDescription = 'Skeleton to build static websties using Pug and Less, plus a live-reload webserver for faster development'
 
-+homeArticle(link, title, subTitle)
+mixin homeArticle(link, title, subTitle)
 	article
-		a(href="/pages/#{link}")
-		header
-			.details
-				h2 #{title}
-				p #{subTitle}
-		span.bw-wrap
-			img.bw(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/#{link}/#{link}-bw.jpg", alt="#{title}", width=300, height=300)
-		span.clr-wrap
-			img.clr(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/#{link}/#{link}.jpg", alt="#{title}", width=300, height=300)
+		a(href="/pages/" + link)
+			header
+				.details
+					h2= title
+					p= subTitle
+			span.bw-wrap
+				img.bw(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/" + link + "/" + link + "-bw.jpg", alt=title, width=300, height=300)
+			span.clr-wrap
+				img.clr(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/" + link + "/" + link + ".jpg", alt=title, width=300, height=300)
 
 include ./partials/header.pug
-	body
-		header
-			h1 Example Pug file
-		p.text-styled This text uses a font from ./source/assets/fonts
-		p Which is different from this font
-		br
-		p.text-center This text is centered using a static CSS from ./source/assets/css
-		button(onclick="assetsFunction()") This button calls a function from ./source/assets/js
-		p And this is a static image copied from ./source/assets/images:
-		div
-			img(src='images/some_static.jpg')
+body
+	section#portfolio
+		h2#portfolio-title Proyectos
+	div
+		+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
