@@ -25,6 +25,7 @@ const SRC_FILES = {
 	pug: SRC_DIR.pug + '*.pug',
 	pugPages: SRC_DIR.pug + 'project/*.pug',
 	pugPartials: SRC_DIR.pug + 'partials/*.pug',
+	pugTemplates: SRC_DIR.pug + 'templates/*.pug',
 	js: SRC_DIR.js + '**/*.js',
 	images: SRC_DIR.img + '**/*',
 	assets: SRC_DIR.assets + '**/*'
@@ -44,7 +45,7 @@ PUB_DIR.img = PUB_DIR.root + 'images/';
 
 gulp.task('watch', () => {
 	gulp.watch(SRC_FILES.less, ['less']);
-	gulp.watch([SRC_FILES.pug, SRC_FILES.pugPartials, SRC_FILES.pugPages], ['pug']);
+	gulp.watch([SRC_FILES.pug, SRC_FILES.pugPartials, SRC_FILES.pugPages, SRC_FILES.pugTemplates], ['pug']);
 	gulp.watch(SRC_FILES.images, ['imagemin']);
 	gulp.watch(SRC_FILES.assets.onlyCopy, ['copyAssets']);
 });

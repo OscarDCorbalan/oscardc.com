@@ -1,0 +1,41 @@
+block vars
+	- var title = "Empty project"
+	- var subTitle = "Empty description"
+
+	- var images = []
+	- images.push({height: 389, src: "bitmaiden/screen1.jpg"})
+
+	- var description = []
+	- description.push("Empty paragraph 1.")
+	- description.push("Empty paragraph 2.")
+	- description.push("Empty paragraph 3.")
+
+	- var links = []
+	- links.push({text: "Empty link name", href="Empty-href"})
+	- var brokenLinks = []
+	- brokenLinks.push("Empty broken link name")
+
+include ../partials/header.pug
+
+#main
+	.pagewidth
+		section#portfolio-elem
+			.graficos
+				each image in images
+					p
+						img(width=625, height=image.height, src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/" + image.src)
+			.resumen
+				header
+					h1= title
+					p= subTitle
+				section#portfolio-descr
+					each paragraph in description
+						p= paragraph
+					- for(link in links)
+						p
+							a.portfolio-url(href=link.href)= link.text
+					- for(link in links)
+						p
+							span.portfolio-url= link.text
+
+include ../partials/footer.pug
