@@ -31,10 +31,10 @@ include ../partials/header.pug
 				section#portfolio-descr
 					each paragraph in description
 						p= paragraph
-					- for(link in links)
+					each link in links
 						p
 							a.portfolio-url(href=link.href)= link.text
-					- for(link in links)
+					each link in brokenLinks
 						p
 							span.portfolio-url= link.text
 
