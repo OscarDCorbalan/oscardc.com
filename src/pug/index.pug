@@ -15,24 +15,26 @@ mixin homeArticle(link, title, subTitle)
 
 include ./partials/header.pug
 
-section#portfolio
-	h2#portfolio-title Proyectos
-	div
-		+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
+#main
+	.pagewidth
+		section#portfolio
+			h2#portfolio-title Projects
+			div
+				+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
 
-		+homeArticle('taxi-en-alcaidesa','Taxi en Alcaidesa','Reponsive web')
-		+homeArticle('geoparsing','Geoparsing','Desarrollo Java')
-		+homeArticle('biwair','Biwair','Juego')
-		+homeArticle('dungeon-realms','Dungeon Realms','Juego')
-		+homeArticle('chromatic-td','Chromatic TD','Juego')
-		+homeArticle('mancala','Mancala','Juego')
-		+homeArticle('sinistra-defense','Sinistra Defense','Juego HTML5')
-		+homeArticle('tierra-media','Tierra Media','Mod para NWN')
-		+homeArticle('bitmaiden','Bit Maiden','Web / Wordpress')
-		+homeArticle('restaurant-menu','Restaurant menus','Aplicación web')
-		+homeArticle('hecho-al-punto','Hecho al Punto','Web')
-		+homeArticle('estanco','Estanco de Llagostera','Web')
-		+homeArticle('taxi-san-roque','Taxi San Roque','Web')
-		+homeArticle('roxbury','Roxbury: The Club','Web')
+				+homeArticle('taxi-en-alcaidesa','Taxi en Alcaidesa','Reponsive web')
+				+homeArticle('geoparsing','Geoparsing','Java + Open Source')
+				+homeArticle('biwair','Biwair','Flixel-based game')
+				+homeArticle('dungeon-realms','Dungeon Realms','Flash-based game')
+				+homeArticle('chromatic-td','Chromatic TD','ActionScript 3-based game')
+				+homeArticle('mancala','Mancala','ActionScript 3-based game')
+				+homeArticle('sinistra-defense','Sinistra Defense','HTML5 game')
+				+homeArticle('tierra-media','Tierra Media','Mod of Neverwinter Nights')
+				+homeArticle('bitmaiden','Bit Maiden','Wordpress portal')
+				+homeArticle('restaurant-menu','Restaurant menus','Python + Flask web application')
+				+homeArticle('hecho-al-punto','Hecho al Punto','HTML5-CSS3 web')
+				+homeArticle('estanco','Estanco de Llagostera','HTML5-CSS3 web')
+				+homeArticle('taxi-san-roque','Taxi San Roque','Responsive website')
+				+homeArticle('roxbury','Roxbury: The Club','Flash-based website')
 
 include ./partials/footer.pug
