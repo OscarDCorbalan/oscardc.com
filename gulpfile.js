@@ -22,8 +22,9 @@ SRC_DIR.pug = SRC_DIR.root + 'pug/';
 // Source file matchers, using respective directories
 const SRC_FILES = {
 	less: SRC_DIR.less + '*.less',
-	pugTemplates: SRC_DIR.pug + 'templates/*.pug',
 	pug: SRC_DIR.pug + '*.pug',
+	pugPages: SRC_DIR.pug + 'project/*.pug',
+	pugPartials: SRC_DIR.pug + 'partials/*.pug',
 	js: SRC_DIR.js + '**/*.js',
 	images: SRC_DIR.img + '**/*',
 	assets: SRC_DIR.assets + '**/*'
@@ -43,7 +44,7 @@ PUB_DIR.img = PUB_DIR.root + 'images/';
 
 gulp.task('watch', () => {
 	gulp.watch(SRC_FILES.less, ['less']);
-	gulp.watch([SRC_FILES.pug,  SRC_FILES.pugTemplates], ['pug']);
+	gulp.watch([SRC_FILES.pug, SRC_FILES.pugPartials, SRC_FILES.pugPages], ['pug']);
 	gulp.watch(SRC_FILES.images, ['imagemin']);
 	gulp.watch(SRC_FILES.assets.onlyCopy, ['copyAssets']);
 });
@@ -67,7 +68,7 @@ gulp.task('less', () =>
 );
 
 gulp.task('pug', () =>
-	gulp.src(SRC_FILES.pug)
+	gulp.src([SRC_FILES.pug, SRC_FILES.pugPages])
 		.pipe(pug({
 			// pretty: true // Comment this to get minified HTML
 		}))
@@ -101,5 +102,5 @@ gulp.task('webserver', () =>
 	})
 );
 
-gulp.task('default', ['less', 'pug', 'imagemin', 'jsmin', 'copyAssets']);
+gulp.task('default', ['less', 'pug', /*'imagemin',*/ 'jsmin', 'copyAssets']);
 gulp.task('server', ['default', 'webserver', 'watch']);

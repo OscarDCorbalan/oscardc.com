@@ -3,7 +3,7 @@
 
 mixin homeArticle(link, title, subTitle)
 	article
-		a(href="/pages/" + link)
+		a(href="/project/" + link)
 			header
 				.details
 					h2= title
@@ -14,6 +14,7 @@ mixin homeArticle(link, title, subTitle)
 				img.clr(src="http://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1473228387/oscardc.com/img/" + link + "/" + link + ".jpg", alt=title, width=300, height=300)
 
 include ./partials/header.pug
+
 section#portfolio
 	h2#portfolio-title Proyectos
 	div
@@ -33,3 +34,5 @@ section#portfolio
 		+homeArticle('estanco','Estanco de Llagostera','Web')
 		+homeArticle('taxi-san-roque','Taxi San Roque','Web')
 		+homeArticle('roxbury','Roxbury: The Club','Web')
+
+include ./partials/footer.pug
