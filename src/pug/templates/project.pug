@@ -36,6 +36,7 @@ include ../partials/header.pug
 							a.portfolio-url(href=link.href)= link.text
 					each link in brokenLinks
 						p
-							span.portfolio-url= link.text
+							del
+								span.portfolio-url= link
 
 include ../partials/footer.pug
