@@ -1,6 +1,6 @@
 {
   "name": "oscardc.com",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "homepage": "https://github.com/OscarDCorbalan/oscardc-com",
   "description": "Node app to build and run my personal site",
   "main": "index.js",
