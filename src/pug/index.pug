@@ -1,9 +1,9 @@
 - var headTitle = 'Gulp Less Pug Skeleton'
 - var headDescription = 'Skeleton to build static websties using Pug and Less, plus a live-reload webserver for faster development'
 
-mixin homeArticle(link, title, subTitle)
+mixin homeArticle(link, title, subTitle, year)
 	article
-		a(href="/project/" + link)
+		a(href="/project/" + link + ".html")
 			header
 				.details
 					h2= title
@@ -19,22 +19,32 @@ include ./partials/header.pug
 	.pagewidth
 		section#portfolio
 			h2#portfolio-title Projects
-			div
+			.overflow-auto
 				+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
 
 				+homeArticle('taxi-en-alcaidesa','Taxi en Alcaidesa','Reponsive web')
 				+homeArticle('geoparsing','Geoparsing','Java + Open Source')
-				+homeArticle('biwair','Biwair','Flixel-based game')
-				+homeArticle('dungeon-realms','Dungeon Realms','Flash-based game')
-				+homeArticle('chromatic-td','Chromatic TD','ActionScript 3-based game')
 				+homeArticle('mancala','Mancala','ActionScript 3-based game')
 				+homeArticle('sinistra-defense','Sinistra Defense','HTML5 game')
-				+homeArticle('tierra-media','Tierra Media','Mod of Neverwinter Nights')
-				+homeArticle('bitmaiden','Bit Maiden','Wordpress portal')
 				+homeArticle('restaurant-menu','Restaurant menus','Python + Flask web application')
-				+homeArticle('hecho-al-punto','Hecho al Punto','HTML5-CSS3 web')
 				+homeArticle('estanco','Estanco de Llagostera','HTML5-CSS3 web')
-				+homeArticle('taxi-san-roque','Taxi San Roque','Responsive website')
-				+homeArticle('roxbury','Roxbury: The Club','Flash-based website')
+			.overflow-auto
+				h3 Year 2014
+				+homeArticle('biwair','Biwair','Flixel-based game', 2014)
+			.overflow-auto
+				h3 Year 2013
+				+homeArticle('dungeon-realms','Dungeon Realms','Flash-based game', 2013)
+				+homeArticle('hecho-al-punto','Hecho al Punto','HTML5-CSS3 web', 2013)
+				+homeArticle('taxi-san-roque','Taxi San Roque','Responsive website', 2013)
+			.overflow-auto
+				h3 Year 2012
+				+homeArticle('chromatic-td','Chromatic TD','ActionScript 3-based game', 2012)
+				+homeArticle('bitmaiden','Bit Maiden','Wordpress portal', 2012)
+			.overflow-auto
+				h3 Year 2009
+				+homeArticle('roxbury','Roxbury: The Club','Flash-based website', 2009)
+			.overflow-auto
+				h3 2003-2005 (more than 10 years ago):
+				+homeArticle('tierra-media','Tierra Media','Mod of Neverwinter Nights')
 
 include ./partials/footer.pug
