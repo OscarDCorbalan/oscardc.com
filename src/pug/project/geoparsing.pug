@@ -1,0 +1,22 @@
+extends ../templates/project
+
+block vars
+	- var title = "Geoparsing"
+	- var subTitle = "Java + OpenSource project"
+	- var year = 2013
+
+	- var images = []
+	- images.push({height: 409, src: "geoparsing/azul.jpg", title: "Sentisis"})
+	- images.push({height: 340, src: "geoparsing/clavin.jpg", title: "CLAVIN"})
+	- images.push({height: 373, src: "geoparsing/openstreetmap.jpg", title: "OpenStreetMap"})
+
+	- var description = []
+	- description.push("This software was developed for 'Sentisis Analitics', a startup centered in social analytics of Spanish speakers. The client had the requirement of geolocating users and messages of hispanic speakers, to be able to study geographic differences in their studies.")
+	- description.push("The solution offered allows to geoparse locations by integrating the CLAVIN engine (Cartographic Location And Vicinity INdexer), an Open Source software, plus the, also free, OpenStreetMap cartography. The software allows filtering and interpreting written locations, even misspelled places (e.g. Madriz, Parris, Manatan) and abbrevations (NYC, BCN) as well as possible alias (MDQ for 'Mar de Plata').")
+	- description.push("The final product was integrated in the Séntisis server stack, and is able of processing millions of entries in batch to, for example, create popularity maps, as well as processing entries in real time to associate signals or social users to a geolocation.")
+
+	- var links = []
+	- links.push({text: "Sentisis", href: "http://www.sentisis.com"})
+	- links.push({text: "CLAVIN", href: "http://clavin.bericotechnologies.com"})
+	- links.push({text: "OpenStreetMap", href: "http://www.openstreetmap.org"})
+	- var brokenLinks = []
