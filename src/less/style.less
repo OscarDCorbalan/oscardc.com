@@ -25,8 +25,13 @@ p {
 	margin: 0;
 	padding: 0;
 }
-.overflow-auto{
+.overflow-auto {
 	overflow: auto;
+}
+.flex-article-box {
+	display: flex;
+	padding: 30px 0;
+	justify-content: flex-start;
 }
 body > header,
 footer,
@@ -110,8 +115,6 @@ margin-bottom:40px;
 		background: #d0d0d0;
 		border: 1px solid #b9b9b9;
 		border-radius: 160px;
-		float: left;
-		margin: 0 0 30px 30px;
 		overflow: hidden;
 		padding: 4px;
 		position: relative;
@@ -169,6 +172,9 @@ margin-bottom:40px;
 			transition: all 0.2s ease-in;
 		}
 	}
+	article:nth-child(n+2) {
+		margin-left: 30px;
+	}
 	article:hover {
 		background: #272123;
 		border: 1px solid #272123;
@@ -180,10 +186,6 @@ margin-bottom:40px;
 		.clr {
 			opacity: 1;
 		}
-	}
-	article:nth-child(3n+1) {
-		clear: left;
-		margin-left: 0;
 	}
 }
 
