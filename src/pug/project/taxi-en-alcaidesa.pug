@@ -1,0 +1,20 @@
+extends ../templates/project
+
+block vars
+	- var title = "Taxi en Alcaidesa"
+	- var subTitle = "Mobile-first website"
+	- var year = 20
+
+	- var images = []
+	- images.push({height: 394, src: "taxi-en-alcaidesa/desktop.jpg", title: "Vista de escritorio de la página Taxi en Alcaidesa"})
+	- images.push({height: 567, src: "taxi-en-alcaidesa/mobile.jpg", title: "Vista desde móvil de la página Taxi en Alcaidesa"})
+
+	- var description = []
+	- description.push("Responsive web site created for a taxi driver from Alcaidesa, one of the unique urbanizations on the coast of Cadiz (Spain), characterized by its unique beaches and one of the most beautiful golf courses in the world, located in the middle of nature.")
+	- description.push("The site is aimed at a middle-age, active, target group, so thedesign tries to follow a colorful guideline and take advantage of elements such as flat shadows, that give it a modern look.")
+	- description.push("For Taxi at Alcaidesa, it was decided to use flex boxes (CSS 3) together with viewport-width dependant font sizes, to get a fully responsive site. We also used a domain targeted at each language group using hreflang meta tags, to get search engines to direct each potential customer to the correct language.")
+
+	- var links = []
+	- links.push({text: "Taxi en Alcaidesa (Spanish)", href: "http://www.taxienalcaidesa.es"})
+	- links.push({text: "Taxi at Alcaidesa (English)", href: "http://www.taxienalcaidesa.com"})
+	- var brokenLinks = []
