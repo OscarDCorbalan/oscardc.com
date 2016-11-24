@@ -1,0 +1,20 @@
+extends ../templates/project
+
+block vars
+	- var title = "Sotogrande taxi"
+	- var subTitle = "Mobile-first website"
+	- var year = 2016
+
+	- var images = []
+	- images.push({height: 2697, src: "sotogrande-taxi/screen.jpg", title: "Mobile view of sotogrande.taxi"})
+
+	- var description = []
+	- description.push("Web created for a taxi driver of the Sotogrande municipality, one the unique places of Spain thanks to its golf courses, an awesome seaport, the polo tournaments and the number of charactes from public life who either have permanent residence or spend their vacations there.")
+	- description.push("The website follows a mobile-first -which is the main customer- philosophy to have an unbeatable mobile visualization, and everything is optimized to be able to load in record time even without 3G connection coverage, up to the point of locating the best datacenter in the zone for hosting. It also includes everything needed to optimize robot crawling: microdata, hreflang tags, etc.")
+	- description.push("The static site is pre-generated using a system of templates in Jade and styles through LESS, as well as Node.js + Gulp to automate the whole process, obtaining zero duplicate code although being a multi-language site.")
+
+	- var links = []
+	- links.push({text: "Taxi Sotogrande", href: "http://www.sotogrande.taxi"})
+	- links.push({text: "Sotogrande Taxi (english)", href: "http://www.sotogrande.taxi/en/"})
+	- links.push({text: "GitHub project", href: "https://github.com/OscarDoc/sotogrande.taxi"})
+	- var brokenLinks = []
