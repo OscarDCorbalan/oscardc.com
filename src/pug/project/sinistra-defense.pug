@@ -1,0 +1,18 @@
+extends ../templates/project
+
+block vars
+	- var title = "Sinistra Defense"
+	- var subTitle = "HTML5 game"
+	- var year = 20
+
+	- var images = []
+	- images.push({height: 110, src: "sinistra-defense/title.png", title: "Game title"})
+	- images.push({height: 600, src: "sinistra-defense/screen.jpg", title: "Mid-game screenshot"})
+
+	- var description = []
+	- description.push("Space shooter game developed with HTML 5 and the Construct 2 framework, designed to be played in mobile phones and tables (Android, iOS and Windows Phone).")
+	- description.push("The goal of the game is to stop asteroid waves by using three cannons, each with different powers and skills.")
+
+	- var links = []
+	- links.push({text: "GitHub project", href: "https://github.com/OscarDCorbalan/HTML5-Sinistra"})
+	- var brokenLinks = []
