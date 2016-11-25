@@ -33,7 +33,10 @@ include ../partials/header.pug
 					p= subTitle
 				section#portfolio-descr
 					each paragraph in description
-						p= paragraph
+						if typeof paragraph === 'string'
+							p!= paragraph
+						else
+							!= paragraph.content
 					each link in links
 						p
 							a.portfolio-url(href=link.href)= link.text
