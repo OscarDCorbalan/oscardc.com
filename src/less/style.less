@@ -1,3 +1,8 @@
+@color-river: #44b8eb;
+@color-belize: #2980b9;
+@color-turquoise: #2accac;
+@color-sea: #16a085;
+
 @font-face {
     font-family: 'league_gothicregular';
     src: url(../fonts/LeagueGothic-Regular-webfont.woff2) format('woff2'),
@@ -69,7 +74,7 @@ footer,
 	margin-right: 10px;
 }
 .htitle h2 {
-	color: #d9593d;
+	color: @color-river;
 }
 
 body > header {
@@ -275,21 +280,18 @@ margin-top: -10px;
 padding: 0;
 }
 #portfolio-elem .portfolio-url {
-	border: 0;
-	border-radius: 5px;
 	color: #fff;
-	font: 24px 'league_gothicregular', helvetica, arial, sans-serif;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	padding: 7px 10px;
-	transition: all 0.2s ease-in;
-	background: linear-gradient(to bottom,#d9593d,#9e3620);
-	border-bottom: 2px solid #500;
+    padding: 7px 15px;
+    background: @color-river;
+    border-bottom: 3px solid @color-belize;
 }
-#portfolio-elem del .portfolio-url,
 #portfolio-elem .portfolio-url:hover {
-	background: linear-gradient(to bottom,#9e9388,#67585e);
-	border-bottom: 2px solid #222;
+    background: @color-turquoise;
+    border-bottom: 3px solid @color-sea;
+}
+#portfolio-elem del .portfolio-url{
+	background: #777;
+	border-bottom: 3px solid #222;
 }
 /* hobbies */
 #hobbies p{
