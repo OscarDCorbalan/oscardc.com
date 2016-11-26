@@ -1,5 +1,5 @@
-- var headTitle = 'Gulp Less Pug Skeleton'
-- var headDescription = 'Skeleton to build static websties using Pug and Less, plus a live-reload webserver for faster development'
+- var headTitle = 'Oscar D. Corbalan'
+- var headDescription = 'Computer Engineer from Barcelona that loves challenges. Polyglot with fluency in a dozen programming languages and the skill to quickly pick new ones.'
 
 mixin homeArticle(link, title, subTitle, year)
 	article
@@ -18,33 +18,46 @@ include ./partials/header.pug
 #main
 	.pagewidth
 		section#portfolio
-			h2#portfolio-title Projects
+			h2#portfolio-title Some of my public and Open-Source projects
 			.overflow-auto
-				+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
-
-				+homeArticle('taxi-en-alcaidesa','Taxi en Alcaidesa','Reponsive web')
-				+homeArticle('geoparsing','Geoparsing','Java + Open Source')
-				+homeArticle('mancala','Mancala','ActionScript 3-based game')
-				+homeArticle('sinistra-defense','Sinistra Defense','HTML5 game')
-				+homeArticle('restaurant-menu','Restaurant menus','Python + Flask web application')
-				+homeArticle('estanco','Estanco de Llagostera','HTML5-CSS3 web')
+				h3 Year 2016
+				.flex-article-box
+					+homeArticle('restaurant-menu','Restaurant menus','Python + Flask web app')
+					+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
+			.overflow-auto
+				h3 Year 2015
+				.flex-article-box
+					+homeArticle('taxi-en-alcaidesa','Taxi en Alcaidesa','Reponsive web')
 			.overflow-auto
 				h3 Year 2014
-				+homeArticle('biwair','Biwair','Flixel-based game', 2014)
+				.flex-article-box
+					+homeArticle('biwair','Biwair','Flixel-based game', 2014)
+					+homeArticle('sinistra-defense','Sinistra Defense','HTML5 game')
 			.overflow-auto
 				h3 Year 2013
-				+homeArticle('dungeon-realms','Dungeon Realms','Flash-based game', 2013)
-				+homeArticle('hecho-al-punto','Hecho al Punto','HTML5-CSS3 web', 2013)
-				+homeArticle('taxi-san-roque','Taxi San Roque','Responsive website', 2013)
+				.flex-article-box
+					+homeArticle('dungeon-realms','Dungeon Realms','Flash-based game', 2013)
+					+homeArticle('hecho-al-punto','Hecho al Punto','HTML5-CSS3 web', 2013)
+					+homeArticle('taxi-san-roque','Taxi San Roque','Responsive website', 2013)
+				.flex-article-box
+					+homeArticle('geoparsing','Geoparsing','Java + Open Source')
 			.overflow-auto
 				h3 Year 2012
-				+homeArticle('chromatic-td','Chromatic TD','ActionScript 3-based game', 2012)
-				+homeArticle('bitmaiden','Bit Maiden','Wordpress portal', 2012)
+					.flex-article-box
+						+homeArticle('chromatic-td','Chromatic TD','ActionScript 3-based game', 2012)
+						+homeArticle('bitmaiden','Bit Maiden','Wordpress portal', 2012)
+						+homeArticle('estanco','Estanco de Llagostera','HTML5-CSS3 web')
+			.overflow-auto
+				h3 Year 2011
+					.flex-article-box
+						+homeArticle('mancala','Mancala','ActionScript 3-based game')
 			.overflow-auto
 				h3 Year 2009
-				+homeArticle('roxbury','Roxbury: The Club','Flash-based website', 2009)
+				.flex-article-box
+					+homeArticle('roxbury','Roxbury: The Club','Flash-based website', 2009)
 			.overflow-auto
 				h3 2003-2005 (more than 10 years ago):
-				+homeArticle('tierra-media','Tierra Media','Mod of Neverwinter Nights')
+				.flex-article-box
+					+homeArticle('tierra-media','Tierra Media','Mod of Neverwinter Nights')
 
 include ./partials/footer.pug
