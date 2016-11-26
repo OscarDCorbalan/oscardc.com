@@ -14,9 +14,7 @@ block vars
 	- description.push("Empty paragraph 3.")
 
 	- var links = []
-	- links.push({text: "Empty link name", href="Empty-href"})
 	- var brokenLinks = []
-	- brokenLinks.push("Empty broken link name")
 
 include ../partials/header.pug
 
@@ -37,6 +35,8 @@ include ../partials/header.pug
 							p!= paragraph
 						else
 							!= paragraph.content
+					if links.length > 0 || brokenLinks.length > 0
+						p Links:
 					each link in links
 						p
 							a.portfolio-url(href=link.href)= link.text
