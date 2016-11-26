@@ -103,5 +103,5 @@ gulp.task('webserver', () =>
 	})
 );
 
-gulp.task('default', ['less', 'pug', /*'imagemin',*/ 'jsmin', 'copyAssets']);
+gulp.task('default', ['less', 'pug', 'imagemin', 'jsmin', 'copyAssets']);
 gulp.task('server', ['default', 'webserver', 'watch']);
