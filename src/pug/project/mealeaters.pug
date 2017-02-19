@@ -1,0 +1,25 @@
+extends ../templates/project
+
+block vars
+	- var title = "MealEaters"
+	- var subTitle = "Cloud-based webapp"
+	- var year = 2017
+	- var headDescription = "Web application build for the cloud, built with Python, NodeJS and PostgreSQL"
+
+	- var images = []
+	- images.push({height: 352, src: "mealeaters/normal.png", title: "App monitoring"})
+	- images.push({height: 400, src: "mealeaters/collapsing.png", title: "Collapsing box"})
+	- images.push({height: 400, src: "mealeaters/collapsed.png", title: "Box collapsed"})
+
+	- var description = []
+	- description.push("MealEaters is a restaurant review aggregator, built to live in the cloud.")
+
+	- description.push("It uses <a href=\"https://www.ansible.com\">Ansible</a> to automate deployment of cloud/virtual servers in multiple providers: <a href=\"https://www.scaleway.com/features/\">ScaleWay</a>, <a href=\"https://aws.amazon.com\">Amazon AWS</a>, <a href=\"https://ginernet.com\">GinerNet</a>...")
+	- description.push("The Ansible-automated deployment makes it possible to start/stop/manage servers running <a href=\"https://scrapy.org\">Scrapy</a> that crawl websites looking for restaurant reviews.")
+	- description.push("All these scrapers run automatically, and are synchronized, through job queues implemented in <a href=\"https://en.wikipedia.org/wiki/PostgreSQL\">PostgreSQL</a>.")
+	- description.push("As this is a free-time project, there's still not available a public version of the website. A list of the technologies used so far, is:")
+	- description.push({omitPTag: true, content: "<ul><li><strong>Provisioning</strong>: Ansible and <a href=\"https://www.vagrantup.com\">Vagrant</a>.</li><li><strong>Front end</strong>: <a href=\"https://d3js.org\">D3.js</a> for the charts; HTML5/CSS3 plus Bootstrap & jQuery.</li><li><strong>Back end</strong>: Python for web scraping and server provisioning; NodeJS for the monitoring website.</li><li><strong>Database</strong>: Replicated PostgreSQL.</li></ul>"})
+
+	- var links = []
+	- links.push({text: "MealEaters Monitoring", href: "http://monitor.mealeaters.com"})
+	- var brokenLinks = []
