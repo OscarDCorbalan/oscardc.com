@@ -20,10 +20,18 @@ include ./partials/header.pug
 		section#portfolio
 			h2#portfolio-title Some of my public and Open-Source projects
 			.overflow-auto
+				h3 Year 2017
+				.flex-article-box
+					+homeArticle('mealeaters','Mealeaters','Cloud-based webapp')
+					+homeArticle('lazyload-js','Lazyload.js','Open source JS library')
+			.overflow-auto
 				h3 Year 2016
 				.flex-article-box
 					+homeArticle('restaurant-menu','Restaurant menus','Python + Flask web app')
 					+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
+					+homeArticle('gulp-less-jade-skeleton','Gulp-LESS-Jade','Open source skeleton')
+				.flex-article-box
+					+homeArticle('gulp-less-pug-skeleton','Gulp-LESS-Pug','Open source skeleton')
 			.overflow-auto
 				h3 Year 2015
 				.flex-article-box
