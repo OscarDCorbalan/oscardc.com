@@ -9,9 +9,9 @@ mixin homeArticle(link, title, subTitle, year)
 					h2= title
 					p= subTitle
 			span.bw-wrap
-				img.bw(src="https://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1493922725/oscardc.com/img/" + link + "/" + link + ".jpg", alt=title, width=300, height=300)
+				img.bw(src="/images/" + link + "/" + link + ".jpg", alt=title, width=300, height=300)
 			span.clr-wrap
-				img.clr(src="https://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1493922725/oscardc.com/img/" + link + "/" + link + "-bw.jpg", alt=title, width=300, height=300)
+				img.clr(src="/images/" + link + "/" + link + "-bw.jpg", alt=title, width=300, height=300)
 
 include ./partials/header.pug
 
@@ -20,18 +20,10 @@ include ./partials/header.pug
 		section#portfolio
 			h2#portfolio-title Some of my public and Open-Source projects
 			.overflow-auto
-				h3 Year 2017
-				.flex-article-box
-					+homeArticle('mealeaters','MealEaters','Cloud-based webapp')
-					+homeArticle('lazyload-js','Lazyload.js','Open source JS library')
-			.overflow-auto
 				h3 Year 2016
 				.flex-article-box
 					+homeArticle('restaurant-menu','Restaurant menus','Python + Flask web app')
 					+homeArticle('sotogrande-taxi','Sotogrande Taxi','Mobile-first web')
-					+homeArticle('gulp-less-jade-skeleton','Gulp-LESS-Jade','Open source skeleton')
-				.flex-article-box
-					+homeArticle('gulp-less-pug-skeleton','Gulp-LESS-Pug','Open source skeleton')
 			.overflow-auto
 				h3 Year 2015
 				.flex-article-box
