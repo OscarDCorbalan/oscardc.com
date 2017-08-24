@@ -9,9 +9,9 @@ mixin homeArticle(link, title, subTitle, year)
 					h2= title
 					p= subTitle
 			span.bw-wrap
-				img.bw(src="/images/" + link + "/" + link + ".jpg", alt=title, width=300, height=300)
+				img.bw(data-src="/images/" + link + "/" + link + ".jpg", src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==", alt=title, width=300, height=300, onload='lzld(this)')
 			span.clr-wrap
-				img.clr(src="/images/" + link + "/" + link + "-bw.jpg", alt=title, width=300, height=300)
+				img.clr(data-src="/images/" + link + "/" + link + "-bw.jpg", src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==", alt=title, width=300, height=300, onload='lzld(this)')
 
 include ./partials/header.pug
 
