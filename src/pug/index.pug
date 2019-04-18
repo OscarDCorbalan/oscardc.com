@@ -3,7 +3,7 @@
 
 mixin homeArticle(link, title, subTitle, year)
 	article
-		a(href="/project/" + link)
+		a(href="/project/" + link + "/")
 			header
 				.details
 					h2= title
@@ -19,6 +19,10 @@ include ./partials/header.pug
 	.pagewidth
 		section#portfolio
 			h2#portfolio-title Some of my public and Open-Source projects
+			.overflow-auto
+				h3 Year 2019
+				.flex-article-box
+					+homeArticle('guia-sotogrande','Guía Sotogrande','Built with Hugo')
 			.overflow-auto
 				h3 Year 2017
 				.flex-article-box

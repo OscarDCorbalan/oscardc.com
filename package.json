@@ -4,7 +4,10 @@
   "homepage": "https://github.com/OscarDCorbalan/oscardc-com",
   "description": "Node app to build and run my personal site",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp server",
+    "build": "gulp"
+  },
   "keywords": [
     "node",
     "website"
@@ -13,14 +16,15 @@
     "name": "Oscar D. Corbalan",
     "email": "oscardc@gmx.com",
     "url": "http://www.oscardc.com"
-  },  "repository": {
-      "type": "git",
-      "url": "https://github.com/OscarDCorbalan/oscardc-com.git"
-    },
-    "bugs": {
-      "url": "https://github.com/OscarDCorbalan/oscardc-com/issues",
-      "email": "oscardc@gmx.com"
-    },
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OscarDCorbalan/oscardc-com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OscarDCorbalan/oscardc-com/issues",
+    "email": "oscardc@gmx.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "gulp": "~3.9",

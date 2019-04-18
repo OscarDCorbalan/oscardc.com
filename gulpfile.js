@@ -23,7 +23,7 @@ SRC_DIR.pug = SRC_DIR.root + 'pug/';
 const SRC_FILES = {
 	less: SRC_DIR.less + '*.less',
 	pug: SRC_DIR.pug + '*.pug',
-	pugPages: SRC_DIR.pug + 'project/*.pug',
+	pugPages: SRC_DIR.pug + 'project/**/*.pug',
 	pugPartials: SRC_DIR.pug + 'partials/*.pug',
 	pugTemplates: SRC_DIR.pug + 'templates/*.pug',
 	js: SRC_DIR.js + '**/*.js',
