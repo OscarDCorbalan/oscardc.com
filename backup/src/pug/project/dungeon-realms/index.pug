@@ -1,0 +1,26 @@
+extends ../../templates/project
+
+block vars
+	- var title = "Dungeon Realms"
+	- var subTitle = "Game developed in ActionScript 3"
+	- var year = 2013
+	- var headDescription = "Dungeon Realms is an addictive 1 or 2-player turn-based, deck building and strategy video game, with workers, dragons, money, heroes and evolution ages."
+
+	- var images = []
+	- images.push({height: 391, src: "dungeon-realms/heroes.jpg"})
+	- images.push({height: 496, src: "dungeon-realms/game.jpg"})
+	- images.push({height: 302, src: "dungeon-realms/socket-seed.png"})
+	- images.push({height: 393, src: "dungeon-realms/UML.png"})
+	- images.push({height: 399, src: "dungeon-realms/xml.png"})
+
+	- var description = []
+	- description.push("Dungeon Realms is a game designed by José Carlos de Diego, one of most prolific Spanish designers. It's a card game for 2 players with deck-building in conjunction with the worker placement and resource management.")
+	- description.push("Each player impersonates an adventurer who tries to gather enough money and experience to become the next champion of the mark, by reaching any of the multiple victory conditions (experience gain, killing multiple dragons, etc).")
+	- description.push("Each adventurer starts the game with only 9 (pityful) cards. Every round starts with 5 cards in hand and plays by alternative turns, in which workers are placed to try battle for and win more resources in the shape of extra cards for future rounds, money or experience. As the game advances, various 'Ages' pass and the gains and enemies become bigger and badder.")
+	- description.push("The game is implemented in ActionScript plus the AIR Framework, which makes it multiplatform (Windows, Linux, Android, iOS). Dungeon Realms is multilanguage, thanks to XML-coded texts and cards, and offers online multiplayer support thanks to a custom-implemented NodeJS server based in sockets.")
+
+	- var links = []
+	- links.push({text: "Project at GitHub", href: "https://github.com/OscarDCorbalan/AS3-Engine-CardGame"})
+	- links.push({text: "Game at Board Game Geeks", href: "http://boardgamegeek.com/boardgame/134282/dungeon-realms"})
+	- links.push({text: "Project memory", href: "http://upcommons.upc.edu/pfc/handle/2099.1/18663"})
+	- var brokenLinks = []

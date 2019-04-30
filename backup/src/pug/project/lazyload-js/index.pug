@@ -1,0 +1,25 @@
+extends ../../templates/project
+
+block vars
+	- var title = "Lazyload.js"
+	- var subTitle = "Open Source JavaScript library"
+	- var year = 2017
+	- var headDescription = "Library to lazy load web content in your website."
+
+	- var images = []
+	- images.push({height: 150, src: "lazyload-js/lazyload-1.png", title: "Before loading events"})
+	- images.push({height: 192, src: "lazyload-js/lazyload-2.png", title: "AJAX launched"})
+	- images.push({height: 427, src: "lazyload-js/lazyload-3.png", title: "HTML content loaded, which has inside lazyloaded images"})
+	- images.push({height: 427, src: "lazyload-js/lazyload-4.png", title: "Everything loaded!"})
+
+	- var description = []
+	- description.push("Tired of JS libraries that only work for images?")
+	- description.push("Lazyload.js is a library that detects viewport and user scrolling and allows you to lazy load:")
+	- description.push({omitPTag: true, content: "<ul><li><strong>Images</strong>.</li><li><strong>HTML nodes</strong>.</li><li><strong>IFrames</strong>.</li></ul>"})
+	- description.push("You can see it live, loading all kind of content, at  <a href=\"https://usa.topboats.com\" rel=\"nofollow\">TopBoats</a>.")
+
+	- var links = []
+	- links.push({text: "GitHub repo", href: "https://github.com/OscarDCorbalan/lazyload.js/"})
+	- links.push({text: "JSDelivr CDN", href: "https://www.jsdelivr.com/projects/lazyload-js"})
+
+	- var brokenLinks = []

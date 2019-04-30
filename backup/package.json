@@ -1,0 +1,39 @@
+{
+  "name": "oscardc.com",
+  "version": "1.5.8",
+  "homepage": "https://github.com/OscarDCorbalan/oscardc-com",
+  "description": "Node app to build and run my personal site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp server",
+    "build": "gulp"
+  },
+  "keywords": [
+    "node",
+    "website"
+  ],
+  "author": {
+    "name": "Oscar D. Corbalan",
+    "email": "oscardc@gmx.com",
+    "url": "http://www.oscardc.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OscarDCorbalan/oscardc-com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OscarDCorbalan/oscardc-com/issues",
+    "email": "oscardc@gmx.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.9",
+    "gulp-connect": "~5.0",
+    "gulp-cssmin": "~0.1",
+    "gulp-imagemin": "~3.0",
+    "gulp-less": "~3.2",
+    "gulp-pug": "~3.1",
+    "gulp-rename": "~1.2",
+    "gulp-uglify": "~2.0"
+  }
+}

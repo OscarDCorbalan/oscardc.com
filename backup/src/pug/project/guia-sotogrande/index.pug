@@ -1,0 +1,21 @@
+extends ../../templates/project
+
+block vars
+	- var title = "Guía Sotogrande"
+	- var subTitle = "Website built with Hugo"
+	- var year = 2019
+	- var headDescription = "Guía Sotogrande is a reference website about visiting Sotogrande and nearby places, as well as about the culture of the place"
+
+	- var images = []
+	- images.push({height: 790, src: "guia-sotogrande/homepage.jpg"})
+	- images.push({height: 483, src: "guia-sotogrande/article.jpg"})
+
+	- var description = []
+	- description.push("Guía Sotogrande is a website about visiting Sotogrande and nearby places (San Roque, Cádiz, Estepona, Málaga...), as well as about the culture of the place revolving around the sports like golf and polo.")
+	- description.push("The website is built with Hugo and a customized template. It is hosted using Google Cloud and served through Cloudflare to achieve blazing-fast speeds.")
+
+	- var links = []
+	- links.push({text: "Guía Sotogrande", href: "https://www.guiasotogrande.com"})
+	- links.push({text: "Custom Hugo theme v1", href: "https://gitlab.com/guia-sotogrande"})
+	- links.push({text: "Custom Hugo theme v2", href: "https://github.com/OscarDCorbalan/hugo-theme-guia-sotogrande"})
+	- var brokenLinks = []
