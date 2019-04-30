@@ -5,7 +5,7 @@ image = "portfolio/chromatic-td/chromatic-td.jpg"
 title = "Chromatic Tower Defense"
 description = "Chromatic Tower Defense is a Flash game developed in ActionScript 3, a level editor, and Math-based, dynamic infinite level playability."
 year = 2012
-weight = -20124
+weight = -20123
 +++
 
 Chromatic TD (TD = Tower Defense) is a game, developed in ActionScript, with the objective of stopping the enemies from crossing the map by building different elements (towers) that fire or have effects over enemies or other towers, which make strategy and construction planning key elements. Each enemy killed gives credits that allow building new elements or upgrading existing ones.

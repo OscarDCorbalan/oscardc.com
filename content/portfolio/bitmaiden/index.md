@@ -5,7 +5,7 @@ image = "portfolio/bitmaiden/bitmaiden.jpg"
 title = "Bit Maiden"
 description = "In 2013-2014, Bit Maiden became the 2nd most visited website in the indie games niche, with reviews and integrated HTML and Flash single-and-multi player games."
 year = 2012
-weight = -20123
+weight = -20122
 +++
 
 Bit Maiden was a web portal in the indie videogames niche; that is, created only with the own resources of the development team, without any editor or publisher backing. The portal had both an informative side (news, reviews, etc) and the possibility to play Flash and HTML5 games.
