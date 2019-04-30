@@ -5,7 +5,7 @@ image = "portfolio/gulp-less-jade-skeleton/gulp-less-jade-skeleton.jpg"
 title = "Gulp-LESS-Jade skeleton"
 description = "Skeleton with the necessary Gulp tools and plugin configuration to start building ASAP, with just 2 commands, a web application based on LESS & Jade templates."
 year = 2016
-weight = -20161
+weight = -20162
 +++
 
 Skeleton with the necessary tools and configuration to start building ASAP a web application based on LESS and Jade templates.

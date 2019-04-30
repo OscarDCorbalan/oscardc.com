@@ -5,7 +5,7 @@ image = "portfolio/restaurant-menu/restaurant-menu.jpg"
 title = "Restaurant menus"
 description = "Restaurant Menus is an OAuth-enabled web application that allows restaurant owners to publish and manage their menus. Built with Python/Flask, Bootstrap and Vagrant."
 year = 2016
-weight = -20161
+weight = -20164
 +++
 
 Restaurant Menus is a project, built on top of Python and Flask, that I started while coursing the Full Stack Developer Nanodegree degree at Udacity. It's a web application that allows restaurant owners to register, manage and show off their menus.
@@ -33,4 +33,3 @@ Everything was developed using Vagrant, and hosted at [Heroku](https://www.herok
 
  * Live app at Heroku: https://oscardoc-restaurant-menu.herokuapp.com
  * Code repository: https://github.com/OscarDCorbalan/fullstack-nanodegree-vm/tree/master/vagrant/restaurants
- 

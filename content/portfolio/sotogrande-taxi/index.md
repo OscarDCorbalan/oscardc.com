@@ -5,7 +5,7 @@ image = "portfolio/sotogrande-taxi/sotogrande-taxi.jpg"
 title = "Sotogrande Taxi website"
 description = "Website for a Sotogrande's taxi driver, aimed at mobile-first customers to have an unbeatable mobile visualization, optimized to be able to load in record times."
 year = 2016
-weight = -20161
+weight = -20163
 +++
 
 Web created for a taxi driver of the Sotogrande municipality, one of the very unique places of Spain thanks to its golf courses, an awesome seaport, the polo tournaments and the number of characters from public life who either have permanent residence or spend their vacations there.
