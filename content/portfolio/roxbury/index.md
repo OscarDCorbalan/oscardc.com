@@ -24,4 +24,4 @@ The web is built with Flash to get the dynamism that only it could offer, but wi
 ## Gallery
 
 ![Screenshot 2](/portfolio/roxbury/screen.jpg)
-![Screenshot 1](/portfolio/roxbury/menu-code.jpg)
+![Screenshot 1](/portfolio/roxbury/menu-code.png)
