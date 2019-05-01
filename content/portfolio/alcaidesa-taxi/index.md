@@ -3,7 +3,7 @@ showonlyimage = false
 draft = false
 image = "portfolio/alcaidesa-taxi/alcaidesa-taxi.jpg"
 title = "Alcaidesa taxi website"
-description = "Website for a Alcaidesa's taxi driver, aimed at mobile-first customers to have an unbeatable mobile visualization, optimized to be able to load in record times."
+description = "Website for an Alcaidesa's taxi driver, aimed at mobile-first customers to have an unbeatable mobile visualization, optimized to be able to load in record times."
 year = 2015
 weight = -20151
 +++
