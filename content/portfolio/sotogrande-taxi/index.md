@@ -27,5 +27,5 @@ The static site is pre-generated using a system of templates in Jade and styles 
 
 ### Project links
 
-* Live website (spanish): http://www.sotogrande.taxi/
-* Live website (english): http://www.sotogrande.taxi/en/
+* Live website (spanish): https://www.sotogrande.taxi/
+* Live website (english): https://www.sotogrande.taxi/en/
