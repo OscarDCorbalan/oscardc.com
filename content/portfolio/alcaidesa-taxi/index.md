@@ -8,9 +8,11 @@ year = 2015
 weight = -20151
 +++
 
-Web created for a taxi driver of the Alcaidesa municipality, a Spanish high-income tourist place with lits of golf courses, an awesome seaport and polo tournaments.
+Responsive web site created for a taxi driver from Alcaidesa, one of the unique urbanizations on the coast of Cadiz (Spain), characterized by its unique beaches and one of the most beautiful golf courses in the world, located in the middle of nature.
 
-The website follows a mobile-first -which is the main customer- philosophy to have an unbeatable mobile visualization, and everything is optimized to be able to load in record time even without 3G connection coverage, up to the point of locating the best datacenter in the zone for hosting. It also includes everything needed to optimize robot crawling: microdata, hreflang tags, etc.
+The site is aimed at a middle-age and active target group, with a website design that tries to follow a colorful guideline and take advantage of elements, such as flat shadows, that give it a modern look.
+
+For Taxi at Alcaidesa, it was decided to use flex boxes (CSS 3) together with viewport-width dependant font sizes, to get a fully responsive site. We also used a domain targeted at each language group using hreflang meta tags, to get search engines to direct each potential customer to the correct language.
 
 ## Technologies used
 
