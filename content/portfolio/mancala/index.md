@@ -10,6 +10,8 @@ weight = -20111
 
 Mancala is a game of African origin, where in some countries its also known as Oware. In the real world, playing equipment ranges from simple found stones or seeds with holes dug in the earth to elaborate and expensive boards and playing pieces.
 
+The videogame was developed using Adobe Flash, ActionScript 3.0 and Paint.NET.
+
 ## Gameplay
 
 It consists of a board with two rows of six holes and 48 seeds in which two players try to win the maximum number of these.
