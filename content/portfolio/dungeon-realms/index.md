@@ -38,3 +38,8 @@ The game is implemented in ActionScript plus the AIR Framework, which makes it m
 ![UML 1st diagram](/portfolio/dungeon-realms/UML.png)
 ![UML 2nd diagram](/portfolio/dungeon-realms/uml2.png)
 ![Card represented in XML](/portfolio/dungeon-realms/xml.png)
+
+
+https://github.com/OscarDCorbalan/AS3-Engine-CardGame
+http://boardgamegeek.com/boardgame/134282/dungeon-realms
+http://upcommons.upc.edu/pfc/handle/2099.1/18663
