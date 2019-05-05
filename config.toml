@@ -8,15 +8,9 @@ disqusShortname = ""
 googleAnalytics = ""
 
 [params]
-  # Style options: default (pink), blue, green, pink, red, sea, violet
-  # Use custom.css for your custom styling
-  style = "green"
-  description = "Describe your website"
-  copyright = "&copy;2016 Your name or company"
-  sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
-    "Originally from Toronto, currently based in London."
-  ]
+  description = "Computer Engineer from Barcelona that loves challenges. Polyglot with fluency in a dozen programming languages and the skill to quickly pick new ones."
+  copyright = "&copy;2019 Oscar D. Corbalan"
+
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
      # proxy. The form makes a POST request to their servers to send the actual
