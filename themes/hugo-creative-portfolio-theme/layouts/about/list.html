@@ -1,13 +1,82 @@
 {{ define "main" }}
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-  {{ partial "mobile_nav_toggle.html" . }}
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="content-column-content">
-         <h1>{{ .Title }}</h1>
-         {{ .Content }}
-      </div>
-    </div>
-  </div>
+
+<div class="ui text container">
+    <h1 class="ui header">
+        {{ .Title }}
+    </h1>
+
+    <h2 class="ui header">Reaching me out</h2>
+
+    <p>
+        If its related to any of my <strong>public or open source projects</strong>, you can post on any of the Issues pages in the respective repository.
+    </p>
+
+    <p>
+        You can send me an email to oscardc@gmx.com for everything else:
+    </p>
+
+    <ul class="ui list">
+        <li>Giving or taking courses,</li>
+        <li>Job opportunities,</li>
+        <li>Open source collaborations,</li>
+        <li>Consulting,</li>
+        <li>Partnerships,</li>
+        <li>etc</li>
+    </ul>
+
+
+    <h2 class="ui header">My experience</h2>
+    <p>
+        I'm a Computer Engineer and Full Stack passionate from Barcelona that loves to pursue challenges. I'm a constant learner and a lover of elegantly coded, efficient and scalable solutions. Oh! And passionate about crafting new things.
+    </p>
+
+    <p>
+        I have a preference for HTML5/CSS3, Javascript, Node.js, Python, MongoDB and Git, but also have an holistic technology background since I started programming backin in 2001 with DarkBASIC.
+    </p>
+
+    <p>
+        Some of my professional web development experience includes:
+    </p>
+
+    <h3 class="ui header">Front-end</h3>
+
+    <ul class="ui list">
+        <li><strong>React and Jest expertise</strong>,</li>
+        <li>Knowing how JS works internally,</li>
+        <li>Pure, <strong>vanilla</strong> Javascript and ES6,</li>
+        <li>Mixing up LESS and Bootstrap with GreenSock or JQuery animations,</li>
+        <li>High-performance Canvas rendering,</li>
+        <li>Jade and Pug templates,</li>
+        <li>ActionScript & Flash...</li>
+    </ul>
+
+    <h3 class="ui header">Provisioning</h3>
+
+    <ul class="ui list">
+        <li>VPSs, dedicated servers, <strong>Amazon AWS</strong>, <strong>Google App Engine</strong> and <strong>Firebase</strong>,</li>
+        <li>Deploying and securing <strong>CentOS and RHEL</strong> servers to balance high workloads,</li>
+        <li>Configuring <strong>Nginx</strong> and Apache proxies to balance multiple servers and CDN,</li>
+        <li>Caching everywhere for blazing speed: CDN, Memcached, SQL/NoSQL...</li>
+    </ul>
+
+    <h3 class="ui header">Backend stacks</h3>
+
+    <ul class="ui list">
+        <li><strong>Node.js</strong> + Express,</li>
+        <li><strong>Python</strong> + Flask and Plone,</li>
+        <li>Java + Struts and Spring,</li>
+        <li>PHP + Wordpress...</li>
+    </ul>
+
+    <h3 class="ui header">Databases</h3>
+
+    <ul class="ui list">
+        <li><strong>MongoDB</strong>,</li>
+        <li><strong>Google Datastore</strong>,</li>
+        <li>PostgreSQL,</li>
+        <li><strong>MySQL</strong>,</li>
+        <li>Oracle SQL...</li>
+    </ul>
 </div>
+
 {{ end }}
