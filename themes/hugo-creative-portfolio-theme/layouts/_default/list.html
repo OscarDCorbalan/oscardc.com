@@ -12,7 +12,7 @@
             <div class="ui card">
                 {{ if and (isset .Params "image") .Params.image }}
                 <a class="image" href="{{ .Permalink }}">
-                    <img data-src="{{.Params.image | absURL}}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                    <img data-src="{{.Params.image | relURL }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                 </a>
                 {{ end }}
 
