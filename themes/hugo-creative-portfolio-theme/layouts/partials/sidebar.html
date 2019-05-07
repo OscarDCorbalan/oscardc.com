@@ -9,21 +9,6 @@
             <a class="item" href="{{ absURL .url }}">{{ .name }}</a>
             {{ end }}
 
-            <div class="right item">
-                {{ with .Site.Params.social.github }}
-                <a class="ui inverted button" href="https://www.github.com/{{.}}">GitHub</a>
-                {{end}}
-                <div class="right item">
-                </div>
-                {{ with .Site.Params.social.twitter }}
-                <a class="ui inverted button" href="https://twitter.com/{{.}}">Twitter</a>
-                {{end}}
-                <div class="right item">
-                </div>
-                {{ with .Site.Params.social.linkedin }}
-                <a class="ui inverted button" href="https://www.linkedin.com/in/{{.}}">LinkedIn</a>
-                {{end}}
-            </div>
         </div>
     </div>
 </div>
