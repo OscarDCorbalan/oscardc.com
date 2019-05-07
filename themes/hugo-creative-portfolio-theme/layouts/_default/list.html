@@ -4,7 +4,7 @@
     <h1 class="ui header">
         {{ .Site.Title }}
     </h1>
-    
+
     <h2>Projects 2004-2019</h2>
     <div class="ui four column doubling grid middle aligned">
         {{ range .Data.Pages }}
@@ -12,7 +12,7 @@
             <div class="ui card">
                 {{ if and (isset .Params "image") .Params.image }}
                 <a class="image" href="{{ .Permalink }}">
-                    <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                    <img data-src="{{.Params.image | absURL}}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
                 </a>
                 {{ end }}
 

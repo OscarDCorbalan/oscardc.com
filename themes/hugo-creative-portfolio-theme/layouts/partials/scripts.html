@@ -1,3 +1,15 @@
+<script src="{{ "js/lazyload.min.js" | absURL }}"></script>
+<script>
+    window.onload = function () {
+        var imgs = document.getElementsByTagName('img');
+        console.log(imgs);
+        Array.from(imgs).forEach(function (img) {
+            if (!img.dataset.src) return;
+            console.log(img)
+            lzld(img);
+        });
+    }
+</script>
 
 {{ if .Site.Params.analytics.matomo }}
   {{ partial "_analytics/matomo.html" . }}
