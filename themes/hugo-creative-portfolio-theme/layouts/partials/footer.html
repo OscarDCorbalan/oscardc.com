@@ -14,9 +14,9 @@
         </div>
         <div class="ui inverted section divider"></div>
         <div class="ui horizontal inverted small divided link list">
-            <a href="/" class="item">Home</a>
-            <a href="#" class="item">About me</a>
-            <a href="#" class="item">GitHub</a>
+            {{ range .Site.Params.navlinks }}
+            <a class="item" href="{{ absURL .url }}">{{ .name }}</a>
+            {{ end }}
         </div>
         <div class="ui hidden section divider "></div>
     </div>
