@@ -1,9 +1,6 @@
 <div class="ui inverted vertical center aligned segment">
     <div class="ui container">
         <div class="ui large secondary inverted pointing menu">
-            <a class="toc item">
-                <i class="sidebar icon"></i>
-            </a>
 
             {{ range .Site.Params.navlinks }}
             <a class="item" href="{{ absURL .url }}">{{ .name }}</a>
