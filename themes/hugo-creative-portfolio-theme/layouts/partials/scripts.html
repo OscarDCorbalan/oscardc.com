@@ -2,10 +2,8 @@
 <script>
     window.onload = function () {
         var imgs = document.getElementsByTagName('img');
-        console.log(imgs);
         Array.from(imgs).forEach(function (img) {
             if (!img.dataset.src) return;
-            console.log(img)
             lzld(img);
         });
     }
