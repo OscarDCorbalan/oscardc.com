@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>{{ partial "head.html" . }}</head>
+    <body class="pushable">
+
+        <div class="pusher">
+
+            {{ partial "sidebar.html" . }}
+
+            <div class="ui vertical very padded segment">
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+
+            {{ partial "footer.html" . }}
+            {{ partial "scripts.html" . }}
+
+        </div>
+    </body>
+</html>
