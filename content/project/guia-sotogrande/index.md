@@ -5,7 +5,7 @@ image = "project/guia-sotogrande/guia-sotogrande.jpg"
 title = "Guía Sotogrande"
 description = "Guía Sotogrande is a reference website about visiting Sotogrande and nearby places, as well as about the culture of the place"
 year = 2019
-weight = -20193
+weight = -20191
 +++
 
 Guía Sotogrande is a website about visiting Sotogrande and nearby places (San Roque, Cádiz, Estepona, Málaga...), as well as about the culture of the place revolving around the sports like golf and polo.
