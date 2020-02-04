@@ -34,6 +34,8 @@ googleAnalytics = ""
       #  # Optional integrity check hash
       #  hash = ""
 
+  mainSections = ["project"]
+
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"

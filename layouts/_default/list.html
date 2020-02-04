@@ -6,9 +6,8 @@
     </h1>
 
     <h2>Projects 2004-2019</h2>
-    <div class="ui four column doubling stackable grid middle aligned">
-        {{ range .Data.Pages }}
-        <div class="column">
+    <div class="ui cards">
+        {{ range (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
             <div class="ui card">
                 {{ if and (isset .Params "image") .Params.image }}
                 <a class="image" href="{{ .Permalink }}">
@@ -32,7 +31,6 @@
                     </div>
                 </a>
             </div>
-        </div>
         {{ end }}
     </div>
 
