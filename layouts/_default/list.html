@@ -1,16 +1,50 @@
 {{ define "main" }}
 
 <div class="ui container">
+
     <h1 class="ui header">
-        {{ .Site.Title }}
+        Hi, I'm {{ .Site.Title }}
     </h1>
+    <h2>
+        I do software engineering and lead people to help them become better selves
+    </h2>
+
+    <div class="ui cards">
+            <a class="ui card" href="/about">
+                <img class="image" data-src="/img/me.jpg" src="/img/blank.png">
+
+                <div class="content">
+                    <div class="header">About</div>
+                    <div class="ui meta">
+                        <span class="date">I do things with code</span>
+                    </div>
+                    <div class="description">
+                        Like writing <i>&lt;div&gt;</i> and <i>git push</i> and then your CR increases by 17%.
+                    </div>
+                </div>
+            </a>
+
+            <a class="ui card" href="/contact">
+                <img class="image" data-src="/img/modem.jpg" src="/img/blank.png">
+
+                <div class="content">
+                    <div class="header">Geting in contact</div>
+                    <div class="ui meta">
+                        <span class="date">Brrzzz wiuu wiuuu braaaaa...</span>
+                    </div>
+                    <div class="description">
+                        Looking for a way to contact me or some links to my online profiles?
+                    </div>
+                </div>
+            </a>
+    </div>
 
     <h2>Projects 2004-2019</h2>
     <div class="ui cards">
         {{ range (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
             <a class="ui card" href="{{ .RelPermalink }}">
                 {{ if and (isset .Params "image") .Params.image }}
-                <img class="image" data-src="{{.Params.image | relURL }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                <img class="image" data-src="{{.Params.image | relURL }}" src="/img/blank.png">
                 {{ end }}
 
                 <div class="content">
