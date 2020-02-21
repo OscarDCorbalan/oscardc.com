@@ -1,11 +1,11 @@
-<div class="ui inverted vertical center aligned segment">
-    <div class="ui container">
-        <div class="ui large secondary inverted pointing menu">
+{{ if not .IsHome }}
+    <div class="ui inverted vertical center aligned segment">
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
 
-            {{ range .Site.Params.navlinks }}
-            <a class="item" href="{{ absURL .url }}">{{ .name }}</a>
-            {{ end }}
+                <a class="item" href="/">&larr; Back</a>
 
+            </div>
         </div>
     </div>
-</div>
+{{ end }}
