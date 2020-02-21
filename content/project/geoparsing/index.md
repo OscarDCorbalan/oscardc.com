@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/geoparsing/geoparsing.jpg"
+image = "geoparsing.jpg"
 title = "Geoparsing"
 description = "Software developed to geoparse social messages and geolocate users, to amplify semantic-rich, spanish language analytics for multinational brands."
 year = 2013

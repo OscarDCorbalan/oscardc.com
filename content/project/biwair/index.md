@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/biwair/biwair.jpg"
+image = "biwair.jpg"
 title = "Biwair"
 description = "Biwair is an ode to the gameplay of the cult game Every Extend, where every attack supposes losing a life, so it's a necessity to play intelligent and careful."
 year = 2014

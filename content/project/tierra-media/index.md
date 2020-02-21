@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/tierra-media/tierra-media.jpg"
+image = "tierra-media.jpg"
 title = "La Tierra Media"
 description = "Tierra Media was a persistent online world set in Tolkien's Middle-earth, created as a mod for Neverwinter Nights and becoming one of the most known and played."
 year = 2004

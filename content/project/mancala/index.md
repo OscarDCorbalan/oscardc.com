@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/mancala/mancala.jpg"
+image = "mancala.jpg"
 title = "Mancala"
 description = "Mancala, or Oware in some countries, is a 1 or 2-players videogame that implements one of the most known variants of this board game of African origin."
 year = 2011

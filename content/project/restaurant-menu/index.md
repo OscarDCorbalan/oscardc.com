@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/restaurant-menu/restaurant-menu.jpg"
+image = "restaurant-menu.jpg"
 title = "Restaurant menus"
 description = "Restaurant Menus is an OAuth-enabled web application that allows restaurant owners to publish and manage their menus. Built with Python/Flask, Bootstrap and Vagrant."
 year = 2016

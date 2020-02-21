@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/lazyload-js/lazyload-js.jpg"
+image = "lazyload-js.jpg"
 title = "Lazyload.js"
 description = "Lazyload.js is an open source JavaScript library that can lazy load any kind of web content, think of images, or html fragment in your website."
 year = 2017

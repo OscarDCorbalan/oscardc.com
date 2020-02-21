@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/sinistra-defense/sinistra-defense.jpg"
+image = "sinistra-defense.jpg"
 title = "Sinistra Defense"
 description = "Mobile- and tablet-friendly game fitting in the space shooter and turret defense genres, developed with HTML5 and the Construct 2 framework."
 year = 2014

@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/taxi-san-roque/taxi-san-roque.jpg"
+image = "taxi-san-roque.jpg"
 title = "Taxi San Roque website"
 description = "Web created for a taxi driver from the tourist resort of San Roque, in search of attracting customers through SEO positioning."
 year = 2013

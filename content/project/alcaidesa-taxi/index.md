@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/alcaidesa-taxi/alcaidesa-taxi.jpg"
+image = "alcaidesa-taxi.jpg"
 title = "Alcaidesa taxi website"
 description = "Website for an Alcaidesa's taxi driver, aimed at mobile-first customers to have an unbeatable mobile visualization, optimized to be able to load in record times."
 year = 2015

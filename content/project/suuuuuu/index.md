@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/suuuuuu/suuuuuu.jpg"
+image = "suuuuuu.jpg"
 title = "Suuuuuu.com"
 description = "Small funny, responsive website with just a big button to hear how Cristiano yells \"Suuuuuuuuuuu\"."
 year = 2019

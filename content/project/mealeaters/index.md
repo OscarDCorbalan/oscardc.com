@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/mealeaters/mealeaters.jpg"
+image = "mealeaters.jpg"
 title = "MealEaters"
 description = "Meleaters was a restaurant information scrapper and aggregator, created as a web application built for the cloud, built with Python, NodeJS and PostgreSQL."
 year = 2017

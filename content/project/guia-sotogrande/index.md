@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/guia-sotogrande/guia-sotogrande.jpg"
+image = "guia-sotogrande.jpg"
 title = "Guía Sotogrande"
 description = "Guía Sotogrande is a reference website about visiting Sotogrande and nearby places, as well as about the culture of the place"
 year = 2019

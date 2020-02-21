@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/chromatic-td/chromatic-td.jpg"
+image = "chromatic-td.jpg"
 title = "Chromatic Tower Defense"
 description = "Chromatic Tower Defense is a Flash game developed in ActionScript 3, a level editor, and Math-based, dynamic infinite level playability."
 year = 2012

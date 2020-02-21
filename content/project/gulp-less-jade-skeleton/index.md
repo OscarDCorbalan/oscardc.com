@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/gulp-less-jade-skeleton/gulp-less-jade-skeleton.jpg"
+image = "gulp-less-jade-skeleton.jpg"
 title = "Gulp-LESS-Jade skeleton"
 description = "Skeleton with the necessary Gulp tools and plugin configuration to start building ASAP, with just 2 commands, a web application based on LESS & Jade templates."
 year = 2016

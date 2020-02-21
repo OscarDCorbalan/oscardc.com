@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/sotogrande-taxi/sotogrande-taxi.jpg"
+image = "sotogrande-taxi.jpg"
 title = "Sotogrande Taxi website"
 description = "Website for a Sotogrande's taxi driver, aimed at mobile-first customers to have an unbeatable mobile visualization, optimized to be able to load in record times."
 year = 2016

@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/dungeon-realms/dungeon-realms.jpg"
+image = "dungeon-realms.jpg"
 title = "Dungeon Realms"
 description = "Dungeon Realms is an addictive 1 or 2-player turn-based, deck building and strategy video game, with workers, dragons, money, heroes and evolution ages."
 year = 2013

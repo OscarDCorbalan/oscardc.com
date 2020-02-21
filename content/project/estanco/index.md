@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/estanco/estanco.jpg"
+image = "estanco.jpg"
 title = "Estanco website"
 description = "Website created for a small traditional commerce, a tobacconist at a town near Girona (Spain), built with HTML5 elements and fully custom CSS styleheets."
 year = 2012

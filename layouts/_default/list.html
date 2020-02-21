@@ -44,7 +44,12 @@
         {{ range (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
             <a class="ui card" href="{{ .RelPermalink }}">
                 {{ if and (isset .Params "image") .Params.image }}
-                <img class="image" data-src="{{.Params.image | relURL }}" src="/img/blank.png">
+                    {{ $image := .Resources.GetMatch (.Params.Image) }}
+                    {{ with $image }}
+                        {{ $resized := .Resize "240x240 q100" }}
+                        {{ $resized := $resized.Fill "240x180 q92" }}
+                        <img class="image" data-src="{{$resized.RelPermalink | relURL }}" src="/img/blank.png">
+                    {{ end }}
                 {{ end }}
 
                 <div class="content">

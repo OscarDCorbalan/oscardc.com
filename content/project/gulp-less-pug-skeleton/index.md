@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/gulp-less-pug-skeleton/gulp-less-pug-skeleton.jpg"
+image = "gulp-less-pug-skeleton.jpg"
 title = "Gulp-LESS-Pug skeleton"
 description = "Skeleton with the necessary Gulp tools and plugin configuration to start building ASAP, with just 2 commands, a web application based on LESS & Pug templates."
 year = 2016

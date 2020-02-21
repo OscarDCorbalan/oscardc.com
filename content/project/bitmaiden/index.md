@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/bitmaiden/bitmaiden.jpg"
+image = "bitmaiden.jpg"
 title = "Bit Maiden"
 description = "In 2013-2014, Bit Maiden became the 2nd most visited website in the indie games niche, with reviews and integrated HTML and Flash single-and-multi player games."
 year = 2012

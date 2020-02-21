@@ -1,7 +1,7 @@
 +++
 showonlyimage = false
 draft = false
-image = "project/roxbury/roxbury.jpg"
+image = "roxbury.jpg"
 title = "Roxbury: The Club website"
 description = "Media-rich web site developed with Flash and ActionScript 2 for Roxbury: The Club, a pub near Barcelona, using XML & HTML importing altogirhtms for updating."
 year = 2009
