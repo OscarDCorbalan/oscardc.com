@@ -42,11 +42,6 @@ googleAnalytics = ""
   home = true
 
   [[params.navlinks]]
-  name = "CV / Experience"
-  url = "cv/"
-  home = true
-
-  [[params.navlinks]]
   name = "About me"
   url = "about/"
 
@@ -62,6 +57,8 @@ googleAnalytics = ""
   linkedin      = "oscardc"
   #stackoverflow = "full profile url in stackoverflow"
   #instagram     = "full profile url in instagram"
+  npm           = "oscardcorbalan"
   github        = "OscarDCorbalan"
+  #gravatar      = "oscardcorbalan"
   #youtube       = "full profile url in youtube"
   #whatsapp      = "wa.me service link"

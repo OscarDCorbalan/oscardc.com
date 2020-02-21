@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<div class="ui container">
+<div class="ui text container">
     <h2 class="ui header">
         Contact
     </h2>
@@ -13,42 +13,76 @@
     </p>
 
     <div class="ui basic labels">
-        {{ with .Site.Params.social.github }}
-        <div class="ui hidden divider"></div>
-        <a class="ui black image label" href="https://www.github.com/{{.}}" rel="nofollow">
-            <i class="github icon"></i>
-            GitHub
-            <div class="detail">Code</div>
-        </a>
-        {{end}}
 
         {{ with .Site.Params.social.linkedin }}
-        <div class="ui hidden divider"></div>
-        <a class="ui blue image label" href="https://www.linkedin.com/in/{{.}}" rel="nofollow">
-            <i class="linkedin icon"></i>
-            LinkedIn
-            <div class="detail">Experience</div>
-        </a>
+            <div class="ui hidden divider"></div>
+            <a class="ui blue image label" href="https://www.linkedin.com/in/{{.}}" rel="nofollow">
+                <i class="linkedin icon"></i>
+                LinkedIn
+                <div class="detail">Experience</div>
+            </a>
+        {{end}}
+
+        {{ with .Site.Params.social.github }}
+            <div class="ui hidden divider"></div>
+            <a class="ui black image label" href="https://www.github.com/{{.}}" rel="nofollow">
+                <i class="github icon"></i>
+                GitHub
+                <div class="detail">Some of my projects' code made public</div>
+            </a>
+        {{end}}
+
+        {{ with .Site.Params.social.npm }}
+            <div class="ui hidden divider"></div>
+            <a class="ui red image label" href="https://www.npmjs.com/~{{.}}" rel="nofollow">
+                <i class="npm icon"></i>
+                NPM
+                <div class="detail">My npm profile</div>
+            </a>
         {{end}}
 
         {{ with .Site.Params.social.twitter }}
-        <div class="ui hidden divider"></div>
-        <a class="ui blue image label" href="https://twitter.com/{{.}}" rel="nofollow">
-            <i class="twitter icon"></i>
-            Twitter
-            <div class="detail">Randomness</div>
-        </a>
+            <div class="ui hidden divider"></div>
+            <a class="ui blue image label" href="https://twitter.com/{{.}}" rel="nofollow">
+                <i class="twitter icon"></i>
+                Twitter
+                <div class="detail">Randomness</div>
+            </a>
         {{end}}
 
-        {{ with .Site.Params.social.email }}
-        <div class="ui hidden divider"></div>
-        <a class="ui green image label" href="" rel="nofollow">
-            <i class="mail icon"></i>
-            oscardc@gmx.com
-            <div class="detail">Email</div>
-        </a>
+        {{ with .Site.Params.social.gravatar }}
+            <div class="ui hidden divider"></div>
+            <a class="ui black image label" href="https://en.gravatar.com/{{.}}" rel="nofollow">
+                <i class="wordpress icon"></i>
+                Gravatar
+                <div class="detail">Randomness</div>
+            </a>
         {{end}}
+
+
     </div>
+
+
+    {{ with .Site.Params.social.email }}
+        <h3 class="ui header">
+            Email
+        </h3>
+
+        <p>
+            Spam will automatically go into spam. "The inbox IA" automatically does it. I do not control it.
+        </p>
+        <p>
+            So please, save yourself the time of spamming, I'll never ever ever see it. Do something useful instead.
+        </p>
+
+        <div class="ui basic labels">
+            <a class="ui green image label" href="mailto:oscardc@gmx.com">
+                <i class="mail icon"></i>
+                oscardc@gmx.com
+                <div class="detail">Email</div>
+            </a>
+        </div>
+    {{end}}
 </div>
 
 {{ end }}
