@@ -1,7 +1,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-{{ with .Title }}
-    <title>{{ . }}</title>
+{{ if .IsHome }}
+    <title>Oscar D. Corbalan</title>
+{{ else }}
+    <title>{{ .Title }} | Oscar D.C.</title>
 {{ end }}
 {{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}">
