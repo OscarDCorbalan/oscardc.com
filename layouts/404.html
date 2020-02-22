@@ -1,12 +1,9 @@
 {{ define "main" }}
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="content-column-content">
-        <h1>Page not found</h1>
-        <p><a href="{{ .Site.BaseURL }}">Return to the home page</a>.</p>
-      </div>
-    </div>
-  </div>
+<div class="ui text container">
+
+      {{ $image := resources.Get ("404.jpg") }}
+      {{ $resized := $image.Resize "700x q100 q85" }}
+      <img class="image" data-src="{{$resized.RelPermalink | relURL }}" src="/img/blank.png">
+
 </div>
 {{ end }}
