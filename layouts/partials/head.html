@@ -1,23 +1,19 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-{{ if .IsHome }}
-    <title>Oscar D. Corbalan</title>
-{{ else }}
-    <title>{{ .Title }} | Oscar D.C.</title>
-{{ end }}
-{{ with .Site.Params.description }}
-    <meta name="description" content="{{ . }}">
-{{ end }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+{{ if .IsHome }}
+    <title>Oscar D. Corbalan</title>
+    <meta name="description" content="{{ .Site.Params.Description }}">
+{{ else }}
+    <title>{{ .Title }} | Oscar D.C.</title>
+    <meta name="description" content="{{ .Description }}">
+{{ end }}
 
 {{ $semantic := resources.Get "semantc-ui-partial.css" | minify | fingerprint "md5"  }}
-
 <link rel="stylesheet"
       href="{{ $semantic.Permalink }}"
       integrity="{{ $semantic.Data.Integrity }}">
-
 
 <link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}">
 
