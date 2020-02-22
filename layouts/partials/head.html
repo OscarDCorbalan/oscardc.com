@@ -10,7 +10,7 @@
     <meta name="description" content="{{ .Description }}">
 {{ end }}
 
-{{ $semantic := resources.Get "semantc-ui-partial.css" | minify | fingerprint "md5"  }}
+{{ $semantic := resources.Get "semantic-ui-purified.css" | minify | fingerprint "md5"  }}
 <link rel="stylesheet"
       href="{{ $semantic.Permalink }}"
       integrity="{{ $semantic.Data.Integrity }}">
