@@ -5,105 +5,122 @@
         Contact me. Social & email.
     </h1>
 
+    <p>
+        If its related to any of my <strong>public or open source projects</strong>, you can post on any of the Issues pages in the respective repository.
+    </p>
 
     <p>
-        The easiest way to reach me out is to get into one of these social profiles and send me a message through their platforms:
+        Don't hesitate to contact me for any other reason, either:
+    </p>
+
+    <ul class="ui list">
+        <li>Giving or taking courses,</li>
+        <li>Job opportunities,</li>
+        <li>Open source collaborations,</li>
+        <li>Consulting,</li>
+        <li>Partnerships,</li>
+        <li>etc</li>
+    </ul>
+
+    <p>
+        The easiest way to reach me out is through any of the following channels or social profiles -just sending me a message through their platforms:
     </p>
 
     <div class="ui basic labels">
 
         <div class="ui cards">
-        {{ with .Site.Params.social.linkedin }}
-        <a class="ui card" href="https://www.linkedin.com/in/{{.}}" rel="nofollow">
-            <div class="content">
+            {{ with .Site.Params.social.linkedin }}
+            <a class="ui card" href="https://www.linkedin.com/in/{{.}}" rel="nofollow">
+                <div class="content">
 
-                <span class="header"><i class="right floated blue ui icon linkedin"></i>LinkedIn</span>
-                <div class="description">
-                    Professional experience and networking
+                    <span class="header"><i class="right floated blue ui icon linkedin"></i>LinkedIn</span>
+                    <div class="description">
+                        Professional experience and networking
+                    </div>
                 </div>
-            </div>
-            <div class="extra content">
-                <span>
-                    <i class="users icon"></i>
-                    850+ Connections
-                </span>
-            </div>
-        </a>
-        {{end}}
-
-        {{ with .Site.Params.social.github }}
-        <a class="ui card" href="https://www.github.com/{{.}}" rel="nofollow">
-            <div class="content">
-
-                <span class="header"><i class="right floated black ui icon github"></i>GitHub</span>
-                <div class="description">
-                    Some of my personal projects' code made public
+                <div class="extra content">
+                    <span>
+                        <i class="users icon"></i>
+                        850+ Connections
+                    </span>
                 </div>
-            </div>
-            <div class="extra content">
-                <span>
-                    <i class="code icon"></i>
-                    38 Repositories
-                </span>
-            </div>
-        </a>
-        {{end}}
+            </a>
+            {{end}}
 
-        {{ with .Site.Params.social.npm }}
-        <a class="ui card" href="https://www.npmjs.com/~{{.}}" rel="nofollow">
-            <div class="content">
+            {{ with .Site.Params.social.github }}
+            <a class="ui card" href="https://www.github.com/{{.}}" rel="nofollow">
+                <div class="content">
 
-                <span class="header"><i class="right floated red ui icon npm"></i>NPM</span>
-                <div class="description">
-                    My npm profile
+                    <span class="header"><i class="right floated black ui icon github"></i>GitHub</span>
+                    <div class="description">
+                        Some of my personal projects' code made public
+                    </div>
                 </div>
-            </div>
-            <div class="extra content">
-                <span>
-                    <i class="boxes icon"></i>
-                    2 published packages
-                </span>
-            </div>
-        </a>
-        {{end}}
-
-        {{ with .Site.Params.social.twitter }}
-        <div class="ui hidden divider"></div>
-        <a class="ui blue image label" href="https://twitter.com/{{.}}" rel="nofollow">
-            <i class="twitter icon"></i>
-            Twitter
-            <div class="detail">Randomness</div>
-        </a>
-        {{end}}
-
-        {{ with .Site.Params.social.gravatar }}
-        <div class="ui hidden divider"></div>
-        <a class="ui black image label" href="https://en.gravatar.com/{{.}}" rel="nofollow">
-            <i class="wordpress icon"></i>
-            Gravatar
-            <div class="detail">Randomness</div>
-        </a>
-        {{end}}
-
-        {{ with .Site.Params.social.email }}
-        <a class="ui card" href="mailto:oscardc@gmx.com" rel="nofollow">
-            <div class="content">
-
-                <span class="header"><i class="right floated green ui icon mail"></i>Email</span>
-                <div class="description">
-                    oscardc@gmx.com
+                <div class="extra content">
+                    <span>
+                        <i class="code icon"></i>
+                        38 Repositories
+                    </span>
                 </div>
-            </div>
-            <div class="extra content">
-                <span>
-                    <i class="trash icon"></i>
-                    0 Spam
-                </span>
-            </div>
-        </a>
-        {{end}}
-</div>
+            </a>
+            {{end}}
+
+            {{ with .Site.Params.social.npm }}
+            <a class="ui card" href="https://www.npmjs.com/~{{.}}" rel="nofollow">
+                <div class="content">
+
+                    <span class="header"><i class="right floated red ui icon npm"></i>NPM</span>
+                    <div class="description">
+                        My npm profile
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span>
+                        <i class="boxes icon"></i>
+                        2 published packages
+                    </span>
+                </div>
+            </a>
+            {{end}}
+
+            {{ with .Site.Params.social.twitter }}
+            <div class="ui hidden divider"></div>
+            <a class="ui blue image label" href="https://twitter.com/{{.}}" rel="nofollow">
+                <i class="twitter icon"></i>
+                Twitter
+                <div class="detail">Randomness</div>
+            </a>
+            {{end}}
+
+            {{ with .Site.Params.social.gravatar }}
+            <div class="ui hidden divider"></div>
+            <a class="ui black image label" href="https://en.gravatar.com/{{.}}" rel="nofollow">
+                <i class="wordpress icon"></i>
+                Gravatar
+                <div class="detail">Randomness</div>
+            </a>
+            {{end}}
+
+            {{ with .Site.Params.social.email }}
+            <a class="ui card" href="mailto:oscardc@gmx.com" rel="nofollow">
+                <div class="content">
+
+                    <span class="header"><i class="right floated green ui icon mail"></i>Email</span>
+                    <div class="description">
+                        oscardc@gmx.com
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span>
+                        <i class="trash icon"></i>
+                        0 Spam
+                    </span>
+                </div>
+            </a>
+            {{end}}
+        </div>
     </div>
+
 
     <div class="ui hidden section divider "></div>
 
