@@ -39,7 +39,32 @@
             </a>
     </div>
 
-    <h2>Projects 2004-2019</h2>
+    <div class="ui cards">
+        {{ range (where .Site.RegularPages "Section" "in" .Site.Params.professionalSections) }}
+            <a class="ui card" href="{{ .RelPermalink }}">
+                {{ if and (isset .Params "image") .Params.image }}
+                    {{ $image := .Resources.GetMatch (.Params.Image) }}
+                    {{ with $image }}
+                        {{ $resized := .Resize "240x240 q100" }}
+                        {{ $resized := $resized.Fill "240x180 q92" }}
+                        <img class="image" data-src="{{$resized.RelPermalink | relURL }}" src="/img/blank.png">
+                    {{ end }}
+                {{ end }}
+
+                <div class="content">
+                    <div class="header">{{ .Title }}</div>
+                    <div class="ui meta">
+                        <span class="date">Crafted in {{ .Params.year }}</span>
+                    </div>
+                    <div class="description">
+                        {{ .Description }}
+                    </div>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+
+    <h2>Personal projects 2004-2019</h2>
     <div class="ui cards">
         {{ range (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
             <a class="ui card" href="{{ .RelPermalink }}">
