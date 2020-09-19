@@ -13,7 +13,5 @@ jobs:
         uses: actions/checkout@master
       - name: Install hugo
         run: sudo apt-get install hugo
-      - name: Install Dependencies
-        run: npm install
       - name: Build
         run: hugo --minify
