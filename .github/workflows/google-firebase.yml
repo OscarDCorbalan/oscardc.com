@@ -1,0 +1,19 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install hugo
+        run: sudo apt-get install hugo
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: hugo --minify
