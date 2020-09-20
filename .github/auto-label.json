@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "web content": ["content/"],
+    "hugo theme": ["archetypes/", "layot/", "config.toml"],
+    "hugo assets": ["assets/", "static/"],
+    "firebase": [".firebaserc", "firebase.json"],
+    "ci": ".github/workflows/"
+  }
+}
